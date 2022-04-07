@@ -7,7 +7,133 @@
 	<title>Carbage Home</title>
 </head>
 <body>
-	<h1>If red, css working</h1>
+	<nav id="main-menu">
+		<a href="/"><img src="" alt="Carbage Logo"></a>
+		<ul id="center-menu">
+			<li>Home</li>
+			<li>Reduce CF</li>
+			<li>Help</li>
+		</ul>
+		<ul>
+			<li>Total CF</li>
+			<li>Profile</li>
+			<li>Menu</li>
+		</ul>
+	</nav>
+	<main data-id="0"> <!-- 0: home | 1: reduce | 2: info -->
+		<section id="add-garbage">
+			<h2>Add Garbage</h2>
+			<div class="garbage-row">
+				<input type="text" name="type">
+				<input type="text" name="amouunt">
+				<select name="qty">
+					<option>Unit</option>
+					<option>Count</option>
+					<option>Oz</option>
+					<option>lb</option>
+					<option>Kg</option>
+				</select>
+			</div>
+			<button id="add-garbage-btn">Add</button>
+			<div id="garbage-location">
+				<h2>Where are you?</h2>
+				<input type="text" name="location">
+				<button>Track Location</button>
+			</div>
+			<div id="controls">
+				<button id="back">Back</button>
+				<button id="next">Next</button>
+			</div>
+		</section>
+		<section id="choices">
+			<ul>
+				<li>Dispose</li>
+				<li>Reuse</li>
+				<li>Emissions</li>
+			</ul>
+		</section>
+		<section id="locations-list">
+			<ul class="locations-list-left">
+				<li>Location 1</li>
+				<li>Location 1</li>
+				<li>Location 1</li>
+				<li>Location 1</li>
+				<li>Location 1</li>
+			</ul>
+			<div class="locations-list-right">
+				Map Preview
+			</div>
+		</section>
+		<section id="reduce-cf">
+			<div class="reduce-cf-left">
+				<input type="text" name="search">
+				<ul>
+					<li>Food</li>
+					<li>Plastic</li>
+					<li>Glass Item</li>
+					<li>Box</li>
+				</ul>
+			</div>
+			<div class="reduce-cf-right">
+				<h2>Articles</h2>
+				<button>Share</button>
+				<ul class="articles-grid">
+					<li>
+						<article>
+							<h4>Article 1</h4>
+							<p>Article 1 description</p>
+							<button>Learn more</button>
+						</article>
+					</li>
+					<li>
+						<article>
+							<h4>Article 1</h4>
+							<p>Article 1 description</p>
+							<button>Learn more</button>
+						</article>
+					</li>
+					<li>
+						<article>
+							<h4>Article 1</h4>
+							<p>Article 1 description</p>
+							<button>Learn more</button>
+						</article>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section id="emissions">
+			<div class="emissions-view">
+
+				<button>All time</button>
+				<button>Today</button>
+				<button>Last Week</button>
+				<button>Last Month</button>
+				<div class="date-range">
+					<input type="text" name="date-from">
+					<input type="text" name="date-to">
+				</div>
+				<div>
+					<h4>Cardboard: 90% | 30oz</h4>
+					<h4>Reduce by:</h4>
+					<a href="#">Recycle (saves 3oz)</a>
+					<a href="#">Reuse (saves 10oz)</a>
+				</div>
+			</div>
+			<div class="emissions-reduce">
+				
+			</div>
+		</section>
+		<section id="help">
+			<h2>Help</h2>			
+		</section>
+		<section id="profile">
+			<h2>Profile</h2>
+		</section>
+	</main>
+	<footer>
+		<p> © 2022 <a href="/">Carbage.</a> All rights reserved.</p>
+	</footer>
 	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
 </body>
