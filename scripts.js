@@ -47,9 +47,9 @@
         $(document).on('click', '#reuse', function() {
             $('#main').attr("data-id", '3');
         });
-        $(document).on('click', '#emissions', function() {
-            $('#main').attr("data-id", '4');
-        });
+        // $(document).on('click', '#emissions', function() {
+        //     $('#main').attr("data-id", '4');
+        // });
         $(document).on('click', '.locations-list-left li:not(.active), .reduce-cf-left li:not(.active)', function(){
         	$(this).parent().find('.active').removeClass('active');
         	$(this).addClass('active');

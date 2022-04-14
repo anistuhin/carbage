@@ -685,6 +685,7 @@ main {
 #main[data-id="0"] .add-garbage-section,
 #main[data-id="1"] .choices-section,
 #main[data-id="2"] .locations-list-section,
+#main[data-id="2"] .locations-list-section > .choices-section,
 #main[data-id="3"] .reduce-cf-section,
 #main[data-id="4"] .emissions-section,
 #main[data-id="5"] .help-section,
@@ -774,6 +775,20 @@ main {
     fill: 15172c;
     margin-bottom: 15px;
 }
+
+#main[data-id="2"] .locations-list-section > .choices-section svg {
+    width: 30px;
+}
+
+.locations-list-section > .choices-section {
+    margin-bottom: 30px;
+} 
+
+.locations-list-section .choices-section ul li.active {
+    background-color: rgba(21, 23, 44, .08);
+    border-color: #15172c;
+}
+
 
 .reduce-cf-right-header {
     display: flex;
