@@ -1,165 +1,257 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	<title>Carbage Home</title>
-</head>
-<body>
-	<nav id="main-menu">
-		<div class="brand">
-			<img src="assets/images/logo.png" alt="Carbage Logo">
-			<!-- <a href="/"></a> -->
-		</div>
-		<ul id="center-menu">
-			<li class="active">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg>
-				<span>Home</span>
-			</li>
-			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
-				<span>Reduce CF</span>
-			</li>
-			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg>
-				<span>Help</span>
-			</li>
-		</ul>
-		<ul id="right-menu">
-			<li class="total-cf">
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z"/></svg>
-				<span>Total CF</span>
-			</li>
-			<li>
-				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z"/></svg>
-				<span>Profile</span>
-			</li>
-		</ul>
-	</nav>
-	<main>
-		<aside id="left-sidebar">
-			
-		</aside>
-		<div id="main-content" data-id="0"> <!-- 0: home | 1: reduce | 2: info -->
-			<section id="add-garbage">
-				<h2>Add Garbage</h2>
-				<div class="garbage-row">
-					<input type="text" name="type">
-					<input type="text" name="amouunt">
-					<select name="qty">
-						<option>Unit</option>
-						<option>Count</option>
-						<option>Oz</option>
-						<option>lb</option>
-						<option>Kg</option>
-					</select>
-				</div>
-				<button id="add-garbage-btn">Add</button>
-				<div id="garbage-location">
-					<h2>Where are you?</h2>
-					<input type="text" name="location">
-					<button>Track Location</button>
-				</div>
-				<div id="controls">
-					<button id="back">Back</button>
-					<button id="next">Next</button>
-				</div>
-			</section>
-			<section id="choices">
-				<ul>
-					<li>Dispose</li>
-					<li>Reuse</li>
-					<li>Emissions</li>
-				</ul>
-			</section>
-			<section id="locations-list">
-				<ul class="locations-list-left">
-					<li>Location 1</li>
-					<li>Location 1</li>
-					<li>Location 1</li>
-					<li>Location 1</li>
-					<li>Location 1</li>
-				</ul>
-				<div class="locations-list-right">
-					Map Preview
-				</div>
-			</section>
-			<section id="reduce-cf">
-				<div class="reduce-cf-left">
-					<input type="text" name="search">
-					<ul>
-						<li>Food</li>
-						<li>Plastic</li>
-						<li>Glass Item</li>
-						<li>Box</li>
-					</ul>
-				</div>
-				<div class="reduce-cf-right">
-					<h2>Articles</h2>
-					<button>Share</button>
-					<ul class="articles-grid">
-						<li>
-							<article>
-								<h4>Article 1</h4>
-								<p>Article 1 description</p>
-								<button>Learn more</button>
-							</article>
-						</li>
-						<li>
-							<article>
-								<h4>Article 1</h4>
-								<p>Article 1 description</p>
-								<button>Learn more</button>
-							</article>
-						</li>
-						<li>
-							<article>
-								<h4>Article 1</h4>
-								<p>Article 1 description</p>
-								<button>Learn more</button>
-							</article>
-						</li>
-					</ul>
-				</div>
-			</section>
-			<section id="emissions">
-				<div class="emissions-view">
 
-					<button>All time</button>
-					<button>Today</button>
-					<button>Last Week</button>
-					<button>Last Month</button>
-					<div class="date-range">
-						<input type="text" name="date-from">
-						<input type="text" name="date-to">
-					</div>
-					<div>
-						<h4>Cardboard: 90% | 30oz</h4>
-						<h4>Reduce by:</h4>
-						<a href="#">Recycle (saves 3oz)</a>
-						<a href="#">Reuse (saves 10oz)</a>
-					</div>
-				</div>
-				<div class="emissions-reduce">
-					
-				</div>
-			</section>
-			<section id="help">
-				<h2>Help</h2>			
-			</section>
-			<section id="profile">
-				<h2>Profile</h2>
-			</section>
-		</div>
-		<aside id="right-sidebar">
-			
-		</aside>
-	</main>
-	<footer>
-		<p> © 2022 Carbage. All rights reserved.</p>
-	</footer>
-	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="scripts.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Carbage Home</title>
+</head>
+
+<body>
+    <nav id="main-menu">
+        <div class="brand">
+            <img src="assets/images/logo.png" alt="Carbage Logo">
+            <!-- <a href="/"></a> -->
+        </div>
+        <ul id="center-menu">
+            <li class="active">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z" /></svg>
+                <span>Home</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" /></svg>
+                <span>Reduce CF</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z" /></svg>
+                <span>Help</span>
+            </li>
+        </ul>
+        <ul id="right-menu">
+            <li class="total-cf">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z" /></svg>
+                <span>Total CF</span>
+            </li>
+            <li>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                    <path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c39.77 0 72 32.24 72 72S295.8 272 256 272c-39.76 0-72-32.24-72-72S216.2 128 256 128zM256 448c-52.93 0-100.9-21.53-135.7-56.29C136.5 349.9 176.5 320 224 320h64c47.54 0 87.54 29.88 103.7 71.71C356.9 426.5 308.9 448 256 448z" /></svg>
+                <span>Profile</span>
+            </li>
+        </ul>
+    </nav>
+    <main id="main" data-id="3">
+        <aside id="left-sidebar">
+            <section class="locations-list-section">
+                <!-- <select class="cb-input" name="locations-sort">
+                    <option>Sort by</option>
+                    <option>Relevance</option>
+                    <option>Distance</option>
+                    <option>Open Hours</option>
+                </select> -->
+                <ul class="locations-list-left">
+                    <li class="active">
+                        <h4>AVA Recycling Pick Up, Asset Recovery and Shredding</h4>
+                        <p>410 S Clark St, Chicago, IL 60605, United States</p>
+                        <button class="cb-button cb-btn-chevron cb-btn-chevron-right cb-btn-chevron-white"></button>
+                    </li>
+                    <li>
+                        <h4>AVA Recycling Pick Up, Asset Recovery and Shredding</h4>
+                        <p>410 S Clark St, Chicago, IL 60605, United States</p>
+                        <button class="cb-button cb-btn-chevron cb-btn-chevron-right cb-btn-chevron-white"></button>
+                    </li>
+                    <li>
+                        <h4>AVA Recycling Pick Up, Asset Recovery and Shredding</h4>
+                        <p>410 S Clark St, Chicago, IL 60605, United States</p>
+                        <button class="cb-button cb-btn-chevron cb-btn-chevron-right cb-btn-chevron-white"></button>
+                    </li>
+                </ul>
+            </section>
+            <section class="reduce-cf-section">
+                <!-- <input type="text" name="search"> -->
+                <ul class="reduce-cf-left">
+                    <li class="active"><h4>Food articles</h4></li>
+                    <li><h4>Plastic articles</h4></li>
+                    <li><h4>Glass item articles</h4></li>
+                    <li><h4>Box articles</h4></li>
+                </ul>
+            </section>
+            <section class="emissions-section">
+                <div class="emissions-view">
+                    <button>All time</button>
+                    <button>Today</button>
+                    <button>Last Week</button>
+                    <button>Last Month</button>
+                    <div class="date-range">
+                        <input type="text" name="date-from">
+                        <input type="text" name="date-to">
+                    </div>
+                </div>
+            </section>
+        </aside>
+        <div id="main-content">
+            <!-- 0: home | 1: choices | 2: locations | 3: reduce-cf | 4: emissions | 5: help | 6: profile -->
+            <section class="add-garbage-section">
+                <h2>Add Garbage</h2>
+                <div class="garbage-row">
+                    <input class="cb-input" type="text" name="type">
+                    <input class="cb-input" type="text" name="amouunt">
+                    <select class="cb-input" name="qty">
+                        <option>Unit</option>
+                        <option>Count</option>
+                        <option>Oz</option>
+                        <option>lb</option>
+                        <option>Kg</option>
+                    </select>
+                    <button class="cb-button" id="add-garbage-btn">Add</button>
+                </div>
+                <div id="add-garbage-location">
+                    <h2>Where are you?</h2>
+                    <div id="add-garbage-location-row">
+                        <input class="cb-input" type="text" name="location">
+                        <button class="cb-button" id="track-location">Track Location</button>
+                    </div>
+                </div>
+                <div class="section-controls">
+                    <button class="cb-button cb-btn-chevron cb-btn-chevron-right cb-btn-chevron-white" id="home-next">Next</button>
+                </div>
+            </section>
+            <section class="choices-section">
+                <ul>
+                    <li id="dispose">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M135.2 17.69C140.6 6.848 151.7 0 163.8 0H284.2C296.3 0 307.4 6.848 312.8 17.69L320 32H416C433.7 32 448 46.33 448 64C448 81.67 433.7 96 416 96H32C14.33 96 0 81.67 0 64C0 46.33 14.33 32 32 32H128L135.2 17.69zM31.1 128H416V448C416 483.3 387.3 512 352 512H95.1C60.65 512 31.1 483.3 31.1 448V128zM111.1 208V432C111.1 440.8 119.2 448 127.1 448C136.8 448 143.1 440.8 143.1 432V208C143.1 199.2 136.8 192 127.1 192C119.2 192 111.1 199.2 111.1 208zM207.1 208V432C207.1 440.8 215.2 448 223.1 448C232.8 448 240 440.8 240 432V208C240 199.2 232.8 192 223.1 192C215.2 192 207.1 199.2 207.1 208zM304 208V432C304 440.8 311.2 448 320 448C328.8 448 336 440.8 336 432V208C336 199.2 328.8 192 320 192C311.2 192 304 199.2 304 208z" /></svg>
+                        <h2>Dispose</h2>
+                        <p>Search for disposal locations</p>
+                    </li>
+                    <li id="reuse">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M180.2 243.1C185 263.9 162.2 280.2 144.1 268.8L119.8 253.6l-50.9 81.43c-13.33 21.32 2.004 48.98 27.15 48.98h32.02c17.64 0 31.98 14.32 31.98 31.96c0 17.64-14.34 32.05-31.98 32.05H96.15c-75.36 0-121.3-82.84-81.47-146.8L65.51 219.8L41.15 204.5C23.04 193.1 27.66 165.5 48.48 160.7l91.43-21.15C148.5 137.7 157.2 142.9 159.2 151.6L180.2 243.1zM283.1 78.96l41.25 66.14l-24.25 15.08c-18.16 11.31-13.57 38.94 7.278 43.77l91.4 21.15c8.622 1.995 17.23-3.387 19.21-12.01l21.04-91.43c4.789-20.81-17.95-37.05-36.07-25.76l-24.36 15.2L337.4 45.14c-37.58-60.14-125.2-60.18-162.8-.0617L167.2 56.9C157.9 71.75 162.5 91.58 177.3 100.9c14.92 9.359 34.77 4.886 44.11-10.04l7.442-11.89C241.6 58.58 270.9 59.33 283.1 78.96zM497.3 301.3l-16.99-27.26c-9.336-14.98-29.06-19.56-44.04-10.21c-14.94 9.318-19.52 29.15-10.18 44.08l16.99 27.15c13.35 21.32-1.984 49-27.14 49h-95.99l.0234-28.74c0-21.38-25.85-32.09-40.97-16.97l-66.41 66.43c-6.222 6.223-6.222 16.41 .0044 22.63l66.42 66.34c15.12 15.1 40.95 4.386 40.95-16.98l-.0234-28.68h95.86C491.2 448.1 537.2 365.2 497.3 301.3z" /></svg>
+                        <h2>Reuse</h2>
+                        <p>Explore different reclying and reusing options</p>
+                    </li>
+                    <li id="emissions">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                            <path d="M128 32C145.7 32 160 46.33 160 64V215.4L316.6 131C332.6 122.4 352 134 352 152.2V215.4L508.6 131C524.6 122.4 544 134 544 152.2V432C544 458.5 522.5 480 496 480H80C53.49 480 32 458.5 32 432V64C32 46.33 46.33 32 64 32H128z" /></svg>
+                        <h2>Emissions</h2>
+                        <p>Check how much emissions could be reduced by reusing</p>
+                    </li>
+                </ul>
+                <div class="section-controls">
+                    <button class="cb-button cb-btn-chevron cb-btn-chevron-left cb-btn-chevron-white" id="choices-prev">Back to garbage info</button>
+                </div>
+            </section>
+            <section class="locations-list-section">
+                <div class="locations-list-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d95010.19695703337!2d-87.86913026336047!3d41.91288281686306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2cbd75b9e3b7%3A0xc0f3325c61940e15!2sAVA%20Recycling%20Pick%20Up%2C%20Asset%20Recovery%20and%20Shredding!5e0!3m2!1sen!2sbd!4v1649935376358!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" width="100%" height="350" frameborder="0"></iframe>
+                </div>
+                <div class="section-controls">
+                    <button class="cb-button cb-btn-chevron cb-btn-chevron-left cb-btn-chevron-white" id="dispose-prev">Back to choices</button>
+                </div>
+            </section>
+            <section class="reduce-cf-section">
+                <div class="reduce-cf-right">
+                    <div class="reduce-cf-right-header">
+                    	<h2>Food Articles</h2>
+                    	<button class="cb-button cb-btn-chevron cb-btn-chevron-left cb-btn-chevron-white" id="reduce-prev">Back to choices</button>
+                    </div>
+                    <ul class="articles-row">
+                        <li>
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"/></svg>
+                            <article>
+                                <h4>Article 1</h4>
+                                <p>Article 1 description</p>
+                                <button class="cb-link">Learn more</button>
+                            </article>
+                        </li>
+                        <li>
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"/></svg>
+                            <article>
+                                <h4>Article 1</h4>
+                                <p>Article 1 description</p>
+                                <button class="cb-link">Learn more</button>
+                            </article>
+                        </li>
+                        <li>
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"/></svg>
+                            <article>
+                                <h4>Article 1</h4>
+                                <p>Article 1 description</p>
+                                <button class="cb-link">Learn more</button>
+                            </article>
+                        </li>
+                    </ul>
+                    <ul class="articles-row">
+                        <li>
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"/></svg>
+                            <article>
+                                <h4>Article 1</h4>
+                                <p>Article 1 description</p>
+                                <button class="cb-link">Learn more</button>
+                            </article>
+                        </li>
+                        <li>
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"/></svg>
+                            <article>
+                                <h4>Article 1</h4>
+                                <p>Article 1 description</p>
+                                <button class="cb-link">Learn more</button>
+                            </article>
+                        </li>
+                        <li>
+                        	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M447.1 32h-384C28.64 32-.0091 60.65-.0091 96v320c0 35.35 28.65 64 63.1 64h384c35.35 0 64-28.65 64-64V96C511.1 60.65 483.3 32 447.1 32zM111.1 96c26.51 0 48 21.49 48 48S138.5 192 111.1 192s-48-21.49-48-48S85.48 96 111.1 96zM446.1 407.6C443.3 412.8 437.9 416 432 416H82.01c-6.021 0-11.53-3.379-14.26-8.75c-2.73-5.367-2.215-11.81 1.334-16.68l70-96C142.1 290.4 146.9 288 152 288s9.916 2.441 12.93 6.574l32.46 44.51l93.3-139.1C293.7 194.7 298.7 192 304 192s10.35 2.672 13.31 7.125l128 192C448.6 396 448.9 402.3 446.1 407.6z"/></svg>
+                            <article>
+                                <h4>Article 1</h4>
+                                <p>Article 1 description</p>
+                                <button class="cb-link">Learn more</button>
+                            </article>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </section>
+            <section class="emissions-section">
+                <div class="emissions-view">
+                    <div>
+                        <h4>Cardboard: 90% | 30oz</h4>
+                        <h4>Reduce by:</h4>
+                        <a href="#">Recycle (saves 3oz)</a>
+                        <a href="#">Reuse (saves 10oz)</a>
+                    </div>
+                </div>
+                <div class="emissions-reduce">
+                </div>
+                <div class="section-controls">
+                    <button class="cb-button cb-btn-chevron cb-btn-chevron-left cb-btn-chevron-white" id="emissions-prev">Back to choices</button>
+                </div>
+            </section>
+            <section class="help-section">
+                <h2>Help</h2>
+            </section>
+            <section class="profile-section">
+                <h2>Profile</h2>
+            </section>
+        </div>
+        <aside id="right-sidebar">
+        </aside>
+    </main>
+    <footer>
+        <p> © 2022 Carbage. All rights reserved.</p>
+    </footer>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
 </body>
+
 </html>
