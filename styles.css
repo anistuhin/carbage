@@ -1039,9 +1039,3 @@ textarea.cb-input {
     color: #15172c;
     background: transparent;
 }
-
-@media only screen and (max-width: 1400px) {
-  .locations-list-left li, .reduce-cf-left li {
-    width: calc(100% - 70px) !important
-  }
-}
