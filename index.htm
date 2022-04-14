@@ -8,131 +8,149 @@
 </head>
 <body>
 	<nav id="main-menu">
-		<a href="/"><img src="" alt="Carbage Logo"></a>
+		<div class="brand">
+			<a href="/"><img src="assets/images/logo.png" alt="Carbage Logo"></a>
+		</div>
 		<ul id="center-menu">
-			<li>Home</li>
-			<li>Reduce CF</li>
-			<li>Help</li>
+			<li class="active">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg>
+				<span>Home</span>
+			</li>
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/></svg>
+				<span>Reduce CF</span>
+			</li>
+			<li>
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"/></svg>
+				<span>Help</span>
+			</li>
 		</ul>
-		<ul>
+		<ul id="right-menu">
 			<li>Total CF</li>
 			<li>Profile</li>
-			<li>Menu</li>
 		</ul>
 	</nav>
-	<main data-id="0"> <!-- 0: home | 1: reduce | 2: info -->
-		<section id="add-garbage">
-			<h2>Add Garbage</h2>
-			<div class="garbage-row">
-				<input type="text" name="type">
-				<input type="text" name="amouunt">
-				<select name="qty">
-					<option>Unit</option>
-					<option>Count</option>
-					<option>Oz</option>
-					<option>lb</option>
-					<option>Kg</option>
-				</select>
-			</div>
-			<button id="add-garbage-btn">Add</button>
-			<div id="garbage-location">
-				<h2>Where are you?</h2>
-				<input type="text" name="location">
-				<button>Track Location</button>
-			</div>
-			<div id="controls">
-				<button id="back">Back</button>
-				<button id="next">Next</button>
-			</div>
-		</section>
-		<section id="choices">
-			<ul>
-				<li>Dispose</li>
-				<li>Reuse</li>
-				<li>Emissions</li>
-			</ul>
-		</section>
-		<section id="locations-list">
-			<ul class="locations-list-left">
-				<li>Location 1</li>
-				<li>Location 1</li>
-				<li>Location 1</li>
-				<li>Location 1</li>
-				<li>Location 1</li>
-			</ul>
-			<div class="locations-list-right">
-				Map Preview
-			</div>
-		</section>
-		<section id="reduce-cf">
-			<div class="reduce-cf-left">
-				<input type="text" name="search">
+	<main>
+		<aside id="left-sidebar">
+			
+		</aside>
+		<div id="main-content" data-id="0"> <!-- 0: home | 1: reduce | 2: info -->
+			<section id="add-garbage">
+				<h2>Add Garbage</h2>
+				<div class="garbage-row">
+					<input type="text" name="type">
+					<input type="text" name="amouunt">
+					<select name="qty">
+						<option>Unit</option>
+						<option>Count</option>
+						<option>Oz</option>
+						<option>lb</option>
+						<option>Kg</option>
+					</select>
+				</div>
+				<button id="add-garbage-btn">Add</button>
+				<div id="garbage-location">
+					<h2>Where are you?</h2>
+					<input type="text" name="location">
+					<button>Track Location</button>
+				</div>
+				<div id="controls">
+					<button id="back">Back</button>
+					<button id="next">Next</button>
+				</div>
+			</section>
+			<section id="choices">
 				<ul>
-					<li>Food</li>
-					<li>Plastic</li>
-					<li>Glass Item</li>
-					<li>Box</li>
+					<li>Dispose</li>
+					<li>Reuse</li>
+					<li>Emissions</li>
 				</ul>
-			</div>
-			<div class="reduce-cf-right">
-				<h2>Articles</h2>
-				<button>Share</button>
-				<ul class="articles-grid">
-					<li>
-						<article>
-							<h4>Article 1</h4>
-							<p>Article 1 description</p>
-							<button>Learn more</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<h4>Article 1</h4>
-							<p>Article 1 description</p>
-							<button>Learn more</button>
-						</article>
-					</li>
-					<li>
-						<article>
-							<h4>Article 1</h4>
-							<p>Article 1 description</p>
-							<button>Learn more</button>
-						</article>
-					</li>
+			</section>
+			<section id="locations-list">
+				<ul class="locations-list-left">
+					<li>Location 1</li>
+					<li>Location 1</li>
+					<li>Location 1</li>
+					<li>Location 1</li>
+					<li>Location 1</li>
 				</ul>
-			</div>
-		</section>
-		<section id="emissions">
-			<div class="emissions-view">
+				<div class="locations-list-right">
+					Map Preview
+				</div>
+			</section>
+			<section id="reduce-cf">
+				<div class="reduce-cf-left">
+					<input type="text" name="search">
+					<ul>
+						<li>Food</li>
+						<li>Plastic</li>
+						<li>Glass Item</li>
+						<li>Box</li>
+					</ul>
+				</div>
+				<div class="reduce-cf-right">
+					<h2>Articles</h2>
+					<button>Share</button>
+					<ul class="articles-grid">
+						<li>
+							<article>
+								<h4>Article 1</h4>
+								<p>Article 1 description</p>
+								<button>Learn more</button>
+							</article>
+						</li>
+						<li>
+							<article>
+								<h4>Article 1</h4>
+								<p>Article 1 description</p>
+								<button>Learn more</button>
+							</article>
+						</li>
+						<li>
+							<article>
+								<h4>Article 1</h4>
+								<p>Article 1 description</p>
+								<button>Learn more</button>
+							</article>
+						</li>
+					</ul>
+				</div>
+			</section>
+			<section id="emissions">
+				<div class="emissions-view">
 
-				<button>All time</button>
-				<button>Today</button>
-				<button>Last Week</button>
-				<button>Last Month</button>
-				<div class="date-range">
-					<input type="text" name="date-from">
-					<input type="text" name="date-to">
+					<button>All time</button>
+					<button>Today</button>
+					<button>Last Week</button>
+					<button>Last Month</button>
+					<div class="date-range">
+						<input type="text" name="date-from">
+						<input type="text" name="date-to">
+					</div>
+					<div>
+						<h4>Cardboard: 90% | 30oz</h4>
+						<h4>Reduce by:</h4>
+						<a href="#">Recycle (saves 3oz)</a>
+						<a href="#">Reuse (saves 10oz)</a>
+					</div>
 				</div>
-				<div>
-					<h4>Cardboard: 90% | 30oz</h4>
-					<h4>Reduce by:</h4>
-					<a href="#">Recycle (saves 3oz)</a>
-					<a href="#">Reuse (saves 10oz)</a>
+				<div class="emissions-reduce">
+					
 				</div>
-			</div>
-			<div class="emissions-reduce">
-				
-			</div>
-		</section>
-		<section id="help">
-			<h2>Help</h2>			
-		</section>
-		<section id="profile">
-			<h2>Profile</h2>
-		</section>
+			</section>
+			<section id="help">
+				<h2>Help</h2>			
+			</section>
+			<section id="profile">
+				<h2>Profile</h2>
+			</section>
+		</div>
+		<aside id="right-sidebar">
+			
+		</aside>
 	</main>
 	<footer>
-		<p> © 2022 <a href="/">Carbage.</a> All rights reserved.</p>
+		<p> © 2022 Carbage. All rights reserved.</p>
 	</footer>
 	<script type="text/javascript" src="jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="scripts.js"></script>
