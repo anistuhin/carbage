@@ -94,7 +94,7 @@
         $('.emissions-sort').val(0);
 
         // Bar Chart
-        require(["d3.v3.min.js"], function(d3) {
+        require(["d3.v3.min.js", "d3.tip.v0.6.3.js"], function(d3) {
             var margin = { top: 40, right: 20, bottom: 30, left: 40 },
                 width = 680 - margin.left - margin.right,
                 height = 350 - margin.top - margin.bottom;

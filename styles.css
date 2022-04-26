@@ -771,6 +771,12 @@ main {
     position: relative;
 }
 
+.quick-look form {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
 .potential-reduction {
     padding-left: 15px;
 }
