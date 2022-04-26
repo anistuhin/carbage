@@ -1,5 +1,11 @@
 (function($) {
     $(document).ready(function() {
+        $(document).on('click', '.modal-close', function(){
+            $('#modal').removeClass('active');
+        });
+        $(document).on('click', '.cb-link', function(){
+            $('#modal').addClass('active');
+        });
         $(document).on('click', '#add-garbage-btn', function() {
             $(this).parent().children('.cb-input').prop('readonly', true);
             $(this).parent().children('select').prop('disabled', true);

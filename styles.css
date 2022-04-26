@@ -806,13 +806,13 @@ main {
     border-top-right-radius: 3px;
 }
 
-.quick-look label input:checked + span {
+.quick-look label input:checked+span {
     color: #ffffff;
     background-color: #15172c;
     cursor: default;
 }
 
-.quick-look label input:not(:checked) + span {
+.quick-look label input:not(:checked)+span {
     color: #15172c;
     cursor: pointer;
 }
@@ -1257,6 +1257,50 @@ textarea.cb-input {
     border: 1px solid #15172c;
     color: #15172c;
     background: transparent;
+}
+
+/* Modal */
+#modal:not(.active) {
+    display: none;
+}
+
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(21, 23, 44, .5);
+    z-index: 99999;
+}
+
+.modal-body {
+    width: 680px;
+    height: 70vh;
+    margin-top: 15vh;
+    margin-left: calc((100% - 680px) / 2);
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+}
+
+.modal-close {
+    width: 25px;
+    height: 25px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    cursor: pointer;
+}
+
+.modal-body article {
+    padding: 25px;
+}
+
+.modal-body article svg {
+    width: 50%;
+    margin-bottom: 20px;
 }
 
 /* Dtaepicker */
