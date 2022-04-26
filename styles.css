@@ -767,6 +767,14 @@ main {
     width: 100%;
 }
 
+.quick-look {
+    position: relative;
+}
+
+.potential-reduction {
+    padding-left: 15px;
+}
+
 .potential-reduction li {
     margin-bottom: 15px;
 }
