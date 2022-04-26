@@ -72,28 +72,24 @@
                     </li>
                 </ul>
             </section>
-            <section class="emissions-section">
+            <section class="emissions-section" data-id="0">
                 <ul class="reduce-cf-filter left-filters">
-                    <li><button class="cb-button active">View</button></li>
-                    <li><button class="cb-button">Reduce CF</button></li>
+                    <li><button data-id="0" class="cb-button active">View</button></li>
+                    <li><button data-id="1" class="cb-button">Reduce CF</button></li>
                 </ul>
                 <select class="cb-input emissions-sort" name="emissions-sort">
-                    <option>All Time</option>
-                    <option>Today</option>
-                    <option>Last Week</option>
-                    <option>Last Month</option>
-                    <option>Custom Range</option>
+                    <option value="0">All Time</option>
+                    <option value="1">Today</option>
+                    <option value="2">Last Week</option>
+                    <option value="3">Last Month</option>
+                    <option value="4">Custom Range</option>
                 </select>
+                <div class="clearfix"></div>
                 <div class="custom-range">
-                <input type="text" class="from-date cb-input">
-                <input type="text" class="to-date cb-input">                    
+                    <input style="margin-bottom: 15px;" type="text" class="from-date cb-input" placeholder="From Date">
+                    <input type="text" class="to-date cb-input" placeholder="To Date">
                 </div>
-                <div class="potential-reduction">
-                    <h4>Cardboard: 90% | 30oz</h4>
-                    <h4>Reduce by:</h4>
-                    <button class="cb-button">Recycle (saves 3oz)</button>
-                    <button class="cb-button">Reuse (saves 10oz)</button>
-                </div>
+                <div class="clearfix"></div>
             </section>
             <section class="locations-list-section">
                 <select class="cb-input locations-sort" name="locations-sort">
@@ -223,7 +219,7 @@
                             <article>
                                 <h4>Article 1</h4>
                                 <p>Article 1 description</p>
-                                <button class="cb-link">Learn more</button>
+                                <p><span class="cb-link">Learn more</span></p>
                             </article>
                         </li>
                         <li>
@@ -233,7 +229,7 @@
                             <article>
                                 <h4>Article 1</h4>
                                 <p>Article 1 description</p>
-                                <button class="cb-link">Learn more</button>
+                                <p><span class="cb-link">Learn more</span></p>
                             </article>
                         </li>
                         <li>
@@ -243,7 +239,7 @@
                             <article>
                                 <h4>Article 1</h4>
                                 <p>Article 1 description</p>
-                                <button class="cb-link">Learn more</button>
+                                <p><span class="cb-link">Learn more</span></p>
                             </article>
                         </li>
                     </ul>
@@ -255,7 +251,7 @@
                             <article>
                                 <h4>Article 1</h4>
                                 <p>Article 1 description</p>
-                                <button class="cb-link">Learn more</button>
+                                <p><span class="cb-link">Learn more</span></p>
                             </article>
                         </li>
                         <li>
@@ -265,7 +261,7 @@
                             <article>
                                 <h4>Article 1</h4>
                                 <p>Article 1 description</p>
-                                <button class="cb-link">Learn more</button>
+                                <p><span class="cb-link">Learn more</span></p>
                             </article>
                         </li>
                         <li>
@@ -275,18 +271,36 @@
                             <article>
                                 <h4>Article 1</h4>
                                 <p>Article 1 description</p>
-                                <button class="cb-link">Learn more</button>
+                                <p><span class="cb-link">Learn more</span></p>
                             </article>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="emissions-section">
-                <h2>Garbage usage frequency</h2>
-                <div id="barchart"></div>
-                <div id="piechart"></div>
-                <div class="emissions-reduce">
+            <section class="emissions-section" data-id="0">
+                <div class="emissions-view">
+                    <h2>Garbage usage frequency</h2>
+                    <div id="barchart"></div>
+                    <div id="piechart"></div>
                 </div>
+                <ul class="potential-reduction">
+                    <li>
+                        <h4>Food: 90% | 30oz</h4>
+                        <p>Reduce by: <span class="cb-link">Recycle (saves 3oz)</span> | <span class="cb-link">Reuse (saves 10oz)</span></p>
+                    </li>
+                    <li>
+                        <h4>Plastic: 90% | 30oz</h4>
+                        <p>Reduce by: <span class="cb-link">Recycle (saves 3oz)</span> | <span class="cb-link">Reuse (saves 10oz)</span></p>
+                    </li>
+                    <li>
+                        <h4>Box: 90% | 30oz</h4>
+                        <p>Reduce by: <span class="cb-link">Recycle (saves 3oz)</span> | <span class="cb-link">Reuse (saves 10oz)</span></p>
+                    </li>
+                    <li>
+                        <h4>Batteries: 90% | 30oz</h4>
+                        <p>Reduce by: <span class="cb-link">Recycle (saves 3oz)</span> | <span class="cb-link">Reuse (saves 10oz)</span></p>
+                    </li>
+                </ul>
             </section>
             <section class="help-section">
                 <h2>Help</h2>
@@ -296,7 +310,7 @@
                 <p>Read articles about reducing your carbon footprint and reusing materials.</p>
                 <h4>Profile</h4>
                 <p>Edit your account information here.</p>
-                <h3>FAQ</h3>
+                <h2 style="margin-top: 20px;">FAQ</h2>
                 <h4>How do I enter my garbage?</h4>
                 <p>Go to the home page and enter your garbage type and amount. Add your location and press next.</p>
                 <h4>How do I see how much garbage I've entered before?</h4>
@@ -308,7 +322,6 @@
                 <h2>Profile</h2>
             </section>
             <section class="cf-score-section">
-                <h2>CF Score</h2>
             </section>
         </div>
         <aside id="right-sidebar">
@@ -351,6 +364,7 @@
         <p>© 2022 Carbage. All rights reserved.</p>
     </footer>
     <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script type="text/javascript" src="d3.v3.min.js"></script>
     <script type="text/javascript" src="d3.tip.v0.6.3.js"></script>
     <script type="text/javascript" src="scripts.js"></script>

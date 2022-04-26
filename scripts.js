@@ -84,6 +84,14 @@
             $(this).parents('ul').find('.active').removeClass('active');
             $(this).addClass('active');
         });
+        $(document).on('change', '.emissions-sort', function(){
+            $('#left-sidebar .emissions-section').attr('data-id', $(this).val());
+        });
+        $(document).on('click', '.reduce-cf-filter li button:not(.active)', function(){
+            $('#main-content .emissions-section').attr('data-id', $(this).attr('data-id'));
+        });
+
+        $(".from-date, .to-date").datepicker();
 
         // Bar Chart
         var margin = { top: 40, right: 20, bottom: 30, left: 40 },
