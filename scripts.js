@@ -460,9 +460,9 @@
                 .attr("height", height)
                 .append("g")
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-            d3.csv("data2.csv", type, function(error, data) {
+            d3.tsv("data2.csv", type, function(error, data) {
                 var regionsByFruit = d3.nest()
-                    .key(function(d) { return d.duration; })
+                    .key(function(d) { return d.fruit; })
                     .entries(data)
                     .reverse();
                 var label = d3.select("form").selectAll("label")
@@ -501,7 +501,7 @@
                             }
                         })
                         .attr("fill", function(d, i) {
-                            return color(d.data.garbage)
+                            return color(d.data.region)
                         })
                         .transition()
                         .duration(myDuration)
@@ -511,7 +511,7 @@
                         .transition()
                         .duration(myDuration)
                         .attrTween("d", function(d, index) {
-                            var currentIndex = this._previous.data.garbage;
+                            var currentIndex = this._previous.data.region;
                             var i = d3.interpolateObject(d, this._previous);
                             return function(t) {
                                 return arc(i(t))
@@ -523,7 +523,7 @@
             });
 
             function key(d) {
-                return d.data.garbage;
+                return d.data.region;
             }
 
             function type(d) {
