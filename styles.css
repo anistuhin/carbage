@@ -784,15 +784,34 @@ main {
 }
 
 .quick-look label span {
-    color: #ffffff;
+    display: block;
     height: 50px;
     font-size: 18px;
     line-height: 50px;
     letter-spacing: -0.09px;
     text-align: center;
-    background-color: #15172c;
     padding-right: 15px;
     padding-left: 15px;
+    border: 1px solid #15172c;
+}
+
+.quick-look label:first-child input {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.quick-look label:last-child input {
+    border-bottom-right-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+.quick-look label input:checked + span {
+    color: #ffffff;
+    background-color: #15172c;
+}
+
+.quick-look label input:not(:checked) + span {
+    color: #15172c;
 }
 
 .potential-reduction {
