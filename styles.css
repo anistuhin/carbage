@@ -773,6 +773,7 @@ main {
 
 .quick-look form {
     margin-top: 20px;
+    display: flex;
 }
 
 .quick-look form input {
@@ -795,12 +796,12 @@ main {
     border: 1px solid #15172c;
 }
 
-.quick-look label:first-child input {
+.quick-look label:first-child span {
     border-bottom-left-radius: 3px;
     border-top-left-radius: 3px;
 }
 
-.quick-look label:last-child input {
+.quick-look label:last-child span {
     border-bottom-right-radius: 3px;
     border-top-right-radius: 3px;
 }
