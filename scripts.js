@@ -94,7 +94,7 @@
         $('.emissions-sort').val(0);
 
         // Bar Chart
-        require(["d3.v3.min.js", "d3.tip.v0.6.3.js"], function(d3) {
+        require(["d3.v3.min.js"], function(d3) {
             var margin = { top: 40, right: 20, bottom: 30, left: 40 },
                 width = 680 - margin.left - margin.right,
                 height = 350 - margin.top - margin.bottom;
@@ -148,13 +148,20 @@
                     .on('mouseover', tip.show)
                     .on('mouseout', tip.hide)
             });
+
             function type(d) {
                 d.frequency = +d.frequency;
                 return d;
             }
         });
         // pie chart
-        require(["d3.v4.min.js"], function(d3) {
+        require.config({
+            paths: {
+                'v3': 'd3.v4.min.js',
+                'tip': 'd3.tip.v0.6.3.js'
+            }
+        });
+        require(['v3', 'tip'], function(d3) {
             var myDuration = 600;
             var firstTime = true;
             var width = 250,
@@ -193,6 +200,7 @@
                     .property("checked", true);
                 label.append("span")
                     .text(function(d) { return d.key; });
+
                 function change(region) {
                     var path = svg.selectAll("path");
                     var data0 = path.data(),
@@ -281,6 +289,7 @@
                     }
                 }
             }
+
             function arcTween(d) {
                 var i = d3.interpolate(this._current, d);
                 this._current = i(0);
@@ -288,6 +297,7 @@
                     return arc(i(t))
                 }
             }
+
             function cloneObj(obj) {
                 var o = {};
                 for (var i in obj) {
