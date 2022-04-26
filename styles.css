@@ -827,7 +827,7 @@ main {
 
 #main-content {
     width: 680px;
-    min-height: calc(100vh - (66px + 110px));
+    min-height: calc(100vh - (66px + 134px));
 }
 
 #main .add-garbage-section,
