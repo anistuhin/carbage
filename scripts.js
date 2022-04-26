@@ -50,8 +50,13 @@
         // $(document).on('click', '#emissions', function() {
         //     $('#main').attr("data-id", '4');
         // });
-        $(document).on('click', '.locations-list-left li:not(.active), .reduce-cf-left li:not(.active)', function() {
+        $(document).on('click', '.locations-list-left li button:not(.active), .reduce-cf-left li:not(.active)', function() {
             $(this).parent().find('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+
+        $(document).on('click', '.left-filters li button:not(.active)', function(){
+            $(this).parents('ul').find('.active').removeClass('active');
             $(this).addClass('active');
         });
     });

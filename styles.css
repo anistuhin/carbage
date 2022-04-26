@@ -463,6 +463,11 @@ h2 {
     margin-bottom: 20px;
 }
 
+.clearfix {
+    display: block;
+    clear: both;
+}
+
 nav {
     color: #15172c;
     font-weight: bold;
@@ -574,7 +579,8 @@ nav ul>li:not(:last-child) {
     padding-right: 15px;
     padding-bottom: 8px;
     border-radius: 22px;
-    background: #f0f2f5;
+    color: #d81e5b;
+    background: rgba(216, 30, 91, .1);
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -586,6 +592,7 @@ nav ul>li:not(:last-child) {
 #right-menu li.total-cf svg {
     width: 30px;
     margin-right: 15px;
+    fill: #d81e5b;
 }
 
 #right-menu li:not(.total-cf):hover,
@@ -623,10 +630,13 @@ main {
     padding-left: 15px;
 }
 
+#left-sidebar section {
+    margin-right: 30px;
+}
+
 .locations-list-left,
 .reduce-cf-left {
     list-style: none;
-    margin-right: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -637,7 +647,7 @@ main {
     padding: 25px;
     border: solid 1px #dbdbdb;
     margin-bottom: 15px;
-    width: 250px;
+    width: 200px;
 }
 
 .locations-list-left li::after {
@@ -665,6 +675,52 @@ main {
 .locations-list-left li button::after {
     margin-bottom: 11px !important;
     margin-left: -4px !important;
+}
+
+.reduce-cf-filter {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.reduce-cf-filter li {
+    width: 125px;
+}
+
+.left-filters li button:not(.active) {
+    cursor: pointer;
+}
+
+.left-filters li button.active {
+    cursor: default;
+}
+
+.reduce-cf-filter li button {
+    width: 100%;
+    border: 1px solid #15172c;
+}
+
+.reduce-cf-filter li button:not(.active) {
+    color: #15172c !important;
+    background-color: transparent !important;
+}
+
+.reduce-cf-filter li:nth-child(1) button {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.reduce-cf-filter li:nth-child(2) button {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+.reduce-cf-search {
+    width: 100%;
+    margin-bottom: 15px;
+    max-width: 250px;
+    float: right;
 }
 
 #main-content {

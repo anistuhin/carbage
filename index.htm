@@ -23,7 +23,7 @@
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>
-                <span>Information</span>
+                <span>Reduce CF</span>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -37,7 +37,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z" /></svg>
-                <span>Total CF</span>
+                <span>CF Score</span>
             </li>
             <li>
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -47,7 +47,7 @@
             </li>
         </ul>
     </nav>
-    <main id="main" data-id="0">
+    <main id="main" data-id="3"><!-- 0: home | 1: choices | 2: locations | 3: reduce-cf | 4: emissions | 5: help | 6: profile -->
         <aside id="left-sidebar">
             <section class="locations-list-section">
                 <!-- <select class="cb-input" name="locations-sort">
@@ -75,7 +75,12 @@
                 </ul>
             </section>
             <section class="reduce-cf-section">
-                <!-- <input type="text" name="search"> -->
+                <input type="text" class="cb-input reduce-cf-search" placeholder="Search articles" name="search">
+                <div class="clearfix"></div>
+                <ul class="reduce-cf-filter left-filters">
+                    <li><button class="cb-button active">Reuse</button></li>
+                    <li><button class="cb-button">Recycle</button></li>
+                </ul>
                 <ul class="reduce-cf-left">
                     <li class="active">
                         <h4>Food articles</h4>
@@ -105,7 +110,6 @@
             </section>
         </aside>
         <div id="main-content">
-            <!-- 0: home | 1: choices | 2: locations | 3: reduce-cf | 4: emissions | 5: help | 6: profile -->
             <section class="add-garbage-section">
                 <h2>Add Garbage</h2>
                 <div class="garbage-row">
