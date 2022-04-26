@@ -445,16 +445,13 @@
             var width = 250,
                 height = 250,
                 radius = Math.min(width, height) / 2;
-            var width = 250,
-                height = 250,
-                radius = Math.min(width, height) / 2;
             var color = d3.scaleOrdinal(d3.schemeCategory20);
             var pie = d3.pie()
                 .value(function(d) { return d.count; })
                 .sort(null);
             var arc = d3.arc()
-                .innerRadius(radius - 100)
-                .outerRadius(radius - 20);
+                .innerRadius(radius - 50)
+                .outerRadius(radius - 10);
             var svg = d3.select("#pie-chart").append("svg")
                 .attr("width", width)
                 .attr("height", height)
