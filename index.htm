@@ -41,7 +41,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path d="M222.7 32.15C227.7 49.08 218.1 66.9 201.1 71.94C121.8 95.55 64 169.1 64 255.1C64 362 149.1 447.1 256 447.1C362 447.1 448 362 448 255.1C448 169.1 390.2 95.55 310.9 71.94C293.9 66.9 284.3 49.08 289.3 32.15C294.4 15.21 312.2 5.562 329.1 10.6C434.9 42.07 512 139.1 512 255.1C512 397.4 397.4 511.1 256 511.1C114.6 511.1 0 397.4 0 255.1C0 139.1 77.15 42.07 182.9 10.6C199.8 5.562 217.6 15.21 222.7 32.15V32.15z" /></svg>
-                <span>CF Score</span>
+                <span>Total CF</span>
             </li>
             <li id="profile" style="flex-basis: 60px;">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -51,7 +51,7 @@
             </li>
         </ul>
     </nav>
-    <main id="main" data-id="0">
+    <main id="main" data-id="4">
         <!-- 0: home | 1: choices | 2: locations | 3: reduce-cf | 4: emissions | 5: help | 6: profile -->
         <aside id="left-sidebar">
             <section class="quick-tips">
@@ -71,6 +71,29 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                     </li>
                 </ul>
+            </section>
+            <section class="emissions-section">
+                <ul class="reduce-cf-filter left-filters">
+                    <li><button class="cb-button active">View</button></li>
+                    <li><button class="cb-button">Reduce CF</button></li>
+                </ul>
+                <select class="cb-input emissions-sort" name="emissions-sort">
+                    <option>All Time</option>
+                    <option>Today</option>
+                    <option>Last Week</option>
+                    <option>Last Month</option>
+                    <option>Custom Range</option>
+                </select>
+                <div class="custom-range">
+                <input type="text" class="from-date cb-input">
+                <input type="text" class="to-date cb-input">                    
+                </div>
+                <div class="potential-reduction">
+                    <h4>Cardboard: 90% | 30oz</h4>
+                    <h4>Reduce by:</h4>
+                    <button class="cb-button">Recycle (saves 3oz)</button>
+                    <button class="cb-button">Reuse (saves 10oz)</button>
+                </div>
             </section>
             <section class="locations-list-section">
                 <select class="cb-input locations-sort" name="locations-sort">
@@ -119,18 +142,6 @@
                         <h4>Box articles</h4>
                     </li>
                 </ul>
-            </section>
-            <section class="emissions-section">
-                <div class="emissions-view">
-                    <button>All time</button>
-                    <button>Today</button>
-                    <button>Last Week</button>
-                    <button>Last Month</button>
-                    <div class="date-range">
-                        <input type="text" name="date-from">
-                        <input type="text" name="date-to">
-                    </div>
-                </div>
             </section>
         </aside>
         <div id="main-content">
@@ -274,14 +285,6 @@
                 <h2>Garbage usage frequency</h2>
                 <div id="barchart"></div>
                 <div id="piechart"></div>
-                <div class="emissions-view">
-                    <div>
-                        <h4>Cardboard: 90% | 30oz</h4>
-                        <h4>Reduce by:</h4>
-                        <a href="#">Recycle (saves 3oz)</a>
-                        <a href="#">Reuse (saves 10oz)</a>
-                    </div>
-                </div>
                 <div class="emissions-reduce">
                 </div>
             </section>
