@@ -808,10 +808,12 @@ main {
 .quick-look label input:checked + span {
     color: #ffffff;
     background-color: #15172c;
+    cursor: default;
 }
 
 .quick-look label input:not(:checked) + span {
     color: #15172c;
+    cursor: pointer;
 }
 
 .potential-reduction {
