@@ -767,7 +767,7 @@ main {
     width: 100%;
 }
 
-.quick-look {
+.quick-look > div {
     position: relative;
 }
 
