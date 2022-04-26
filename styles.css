@@ -677,6 +677,14 @@ main {
     margin-left: -4px !important;
 }
 
+.locations-list-right-details {
+    padding-top: 25px;
+}
+
+.locations-list-right-details button {
+    margin-top: 25px;
+}
+
 .reduce-cf-filter {
     list-style: none;
     display: flex;
@@ -716,7 +724,8 @@ main {
     border-bottom-left-radius: 0 !important;
 }
 
-.reduce-cf-search {
+.reduce-cf-search,
+.locations-sort {
     width: 100%;
     margin-bottom: 15px;
     max-width: 250px;
@@ -730,22 +739,28 @@ main {
 
 #main .add-garbage-section,
 #main .choices-section,
+.choices-section-right,
 #main .locations-list-section,
 #main .reduce-cf-section,
 #main .emissions-section,
 #main .help-section,
-#main .profile-section {
+#main .profile-section,
+#main .cf-score-section {
     display: none;
 }
 
 #main[data-id="0"] .add-garbage-section,
 #main[data-id="1"] .choices-section,
 #main[data-id="2"] .locations-list-section,
-#main[data-id="2"] .locations-list-section>.choices-section,
+#main[data-id="2"] .choices-section-right,
+#main[data-id="3"] .choices-section-right,
+#main[data-id="4"] .choices-section-right,
 #main[data-id="3"] .reduce-cf-section,
+#main[data-id="5"] .reduce-cf-section,
 #main[data-id="4"] .emissions-section,
-#main[data-id="5"] .help-section,
-#main[data-id="6"] .profile-section {
+#main[data-id="6"] .help-section,
+#main[data-id="7"] .profile-section,
+#main[data-id="8"] .cf-score-section {
     display: block !important;
 }
 
@@ -801,7 +816,8 @@ main {
     margin-right: 10px;
 }
 
-.choices-section ul {
+.choices-section ul,
+.choices-section-right ul {
     list-style: none;
     display: flex;
     text-align: center;
@@ -809,14 +825,29 @@ main {
     margin: 0;
 }
 
-.choices-section ul li {
-    width: calc((100% - 50px) / 3);
+.choices-section-right ul {
+    margin-bottom: 30px;
+}
+
+.choices-section ul li,
+.choices-section-right ul li {
     border: solid 1px #dbdbdb;
     border-radius: 25px;
     padding: 20px;
 }
 
-.choices-section ul li:hover {
+.choices-section ul li {
+    width: calc((100% - 30px) / 3);
+}
+
+.choices-section-right ul li {
+    width: calc((100% - 10px) / 3);
+    padding: 15px 5px 5px;
+    border-radius: 5px;
+}
+
+.choices-section ul li:hover,
+.choices-section-right ul li:hover {
     cursor: pointer;
     background-color: rgba(21, 23, 44, .08);
     border-color: #15172c;
@@ -826,25 +857,37 @@ main {
     margin-right: 15px;
 }
 
-.choices-section ul li svg {
-    width: 75px;
-    fill: 15172c;
-    margin-bottom: 15px;
+.choices-section-right ul li:not(:last-child) {
+    margin-right: 5px;
 }
 
-#main[data-id="2"] .locations-list-section>.choices-section svg {
-    width: 30px;
-}
-
-.locations-list-section>.choices-section {
-    margin-bottom: 30px;
-}
-
-.locations-list-section .choices-section ul li.active {
+#main[data-id="2"] #dispose,
+#main[data-id="3"] #reuse,
+#main[data-id="4"] #emissions {
     background-color: rgba(21, 23, 44, .08);
     border-color: #15172c;
 }
 
+.choices-section-right > * {
+    margin-bottom: 15px;
+}
+
+.choices-section ul li svg,
+.choices-section-right ul li svg {
+    width: 75px;
+    fill: #15172c;
+    margin-bottom: 15px;
+}
+
+
+.choices-section-right ul li > svg {
+    margin-bottom: 0;
+    width: 25px;
+}
+
+.choices-section-right ul li p {
+    display: none;
+}
 
 .reduce-cf-right-header {
     display: flex;
@@ -900,6 +943,11 @@ main {
 #right-sidebar {
     right: 0;
     padding-right: 15px;
+}
+
+#right-sidebar > * {
+    margin-left: 30px;
+    max-width: 250px;
 }
 
 footer {

@@ -32,6 +32,9 @@
         $(document).on('click', '#track-location', function() {
             $(this).parent().children('.cb-input').val("ERF 2068, 842 W Taylor St, Chicago, IL 60607");
         });
+        $(document).on('click', '#home', function() {
+            $('#main').attr("data-id", '0');
+        });
         $(document).on('click', '#home-next', function() {
             $('#main').attr("data-id", '1');
         });
@@ -47,14 +50,35 @@
         $(document).on('click', '#reuse', function() {
             $('#main').attr("data-id", '3');
         });
-        // $(document).on('click', '#emissions', function() {
-        //     $('#main').attr("data-id", '4');
-        // });
+        $(document).on('click', '#emissions', function() {
+            $('#main').attr("data-id", '4');
+        });
+        $(document).on('click', '#reduce-cf', function() {
+            $('#main').attr("data-id", '5');
+        });
+        $(document).on('click', '#help', function() {
+            $('#main').attr("data-id", '6');
+        });
+        $(document).on('click', '#profile', function() {
+            $('#main').attr("data-id", '7');
+        });
+        $(document).on('click', '#cf-score', function() {
+            $('#main').attr("data-id", '8');
+        });
         $(document).on('click', '.locations-list-left li button:not(.active), .reduce-cf-left li:not(.active)', function() {
             $(this).parent().find('.active').removeClass('active');
             $(this).addClass('active');
         });
-
+        $(document).on('click', '#center-menu li:not(.active)', function() {
+            $(this).parent().find('.active').removeClass('active');
+            $(this).addClass('active');
+            $('#right-menu .active').removeClass('active');
+        });
+        $(document).on('click', '#right-menu li:not(.active)', function() {
+            $(this).parent().find('.active').removeClass('active');
+            $(this).addClass('active');
+            $('#center-menu .active').removeClass('active');
+        });
         $(document).on('click', '.left-filters li button:not(.active)', function(){
             $(this).parents('ul').find('.active').removeClass('active');
             $(this).addClass('active');
