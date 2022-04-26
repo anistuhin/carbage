@@ -1243,7 +1243,7 @@ path.slice {
 
 polyline {
     opacity: .3;
-    stroke: black;
+    stroke: #15172c;
     stroke-width: 2px;
     fill: none;
 }
