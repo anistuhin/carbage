@@ -767,14 +767,32 @@ main {
     width: 100%;
 }
 
-.quick-look > div {
+.quick-look>div {
     position: relative;
 }
 
 .quick-look form {
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    margin-top: 20px;
+}
+
+.quick-look form input {
+    display: none;
+}
+
+.quick-look label {
+    width: 50%;
+}
+
+.quick-look label span {
+    color: #ffffff;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    letter-spacing: -0.09px;
+    text-align: center;
+    background-color: #15172c;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
 .potential-reduction {

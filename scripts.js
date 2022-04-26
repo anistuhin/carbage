@@ -451,7 +451,7 @@
                 .sort(null);
             var arc = d3.arc()
                 .innerRadius(radius - 50)
-                .outerRadius(radius - 10);
+                .outerRadius(radius - 0);
             var svg = d3.select("#pie-chart").append("svg")
                 .attr("width", width)
                 .attr("height", height)
