@@ -165,5 +165,6 @@
             d.frequency = +d.frequency;
             return d;
         }
+        window.d3 === undefined;
     });
 })(window.jQuery);
