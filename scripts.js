@@ -161,6 +161,11 @@
 
         });
 
+        function type(d) {
+            d.frequency = +d.frequency;
+            return d;
+        }
+
         // pie chart
         var myDuration = 600;
         var firstTime = true;
@@ -190,7 +195,7 @@
 
 
 
-        d3.tsv("data.tsv", type, function(error, data) {
+        d3.tsv("data.tsv", typeC, function(error, data) {
             var regionsByFruit = d3.nest()
                 .key(function(d) { return d.fruit; })
                 .entries(data)
@@ -270,6 +275,11 @@
 
         function key(d) {
             return d.data.region;
+        }
+
+        function typeC(d) {
+            d.count = +d.count;
+            return d;
         }
 
         function findNeighborArc(i, data0, data1, key) {
