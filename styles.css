@@ -1192,16 +1192,16 @@ textarea.cb-input {
 .axis path,
 .axis line {
     fill: none;
-    stroke: #000;
+    stroke: #15172c;
     shape-rendering: crispEdges;
 }
 
 .bar {
-    fill: orange;
+    fill: #15172c;
 }
 
 .bar:hover {
-    fill: orangered;
+    fill: #d81e5b;
 }
 
 .x.axis path {
@@ -1212,7 +1212,7 @@ textarea.cb-input {
     line-height: 1;
     font-weight: bold;
     padding: 12px;
-    background: rgba(0, 0, 0, 0.8);
+    background: #15172c;
     color: #fff;
     border-radius: 2px;
 }
@@ -1224,7 +1224,7 @@ textarea.cb-input {
     font-size: 10px;
     width: 100%;
     line-height: 1;
-    color: rgba(0, 0, 0, 0.8);
+    color: #15172c;
     content: "\25BC";
     position: absolute;
     text-align: center;
