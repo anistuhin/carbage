@@ -767,6 +767,10 @@ main {
     width: 100%;
 }
 
+.quick-look {
+    padding-bottom: 50px;
+}
+
 .quick-look>div {
     position: relative;
 }
