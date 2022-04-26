@@ -634,6 +634,29 @@ main {
     margin-right: 30px;
 }
 
+.quick-tips ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.quick-tips ul li {
+    margin-bottom: 20px;
+    border: solid 1px #dbdbdb;
+    border-radius: 25px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.quick-tips ul li svg {
+    text-align: center;
+    width: 35px;
+    fill: #d81e5b;
+    margin-bottom: 15px;
+}
+
 .locations-list-left,
 .reduce-cf-left {
     list-style: none;
@@ -745,7 +768,12 @@ main {
 #main .emissions-section,
 #main .help-section,
 #main .profile-section,
-#main .cf-score-section {
+#main .cf-score-section,
+#main[data-id="2"] .quick-tips,
+#main[data-id="3"] .quick-tips,
+#main[data-id="4"] .quick-tips,
+#main[data-id="5"] .quick-tips,
+#main[data-id="8"] .quick-tips {
     display: none;
 }
 
@@ -760,7 +788,8 @@ main {
 #main[data-id="4"] .emissions-section,
 #main[data-id="6"] .help-section,
 #main[data-id="7"] .profile-section,
-#main[data-id="8"] .cf-score-section {
+#main[data-id="8"] .cf-score-section,
+#main[data-id="8"] .emissions-section {
     display: block !important;
 }
 
@@ -826,7 +855,7 @@ main {
 }
 
 .choices-section-right ul {
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .choices-section ul li,
@@ -868,7 +897,7 @@ main {
     border-color: #15172c;
 }
 
-.choices-section-right > * {
+.choices-section-right>* {
     margin-bottom: 15px;
 }
 
@@ -880,7 +909,7 @@ main {
 }
 
 
-.choices-section-right ul li > svg {
+.choices-section-right ul li>svg {
     margin-bottom: 0;
     width: 25px;
 }
@@ -945,7 +974,7 @@ main {
     padding-right: 15px;
 }
 
-#right-sidebar > * {
+#right-sidebar>* {
     margin-left: 30px;
     max-width: 250px;
 }
