@@ -1349,7 +1349,9 @@ textarea.cb-input {
 }
 
 .modal-body article {
-    padding: 25px;
+    padding: 40px;
+    height: calc(70vh - 80px);
+    overflow-y: auto;
 }
 
 .modal-body article svg {
