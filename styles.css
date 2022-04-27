@@ -1012,6 +1012,7 @@ main {
 .articles-row li {
     border: solid 1px #dbdbdb;
     padding: 20px;
+    width: calc((100% - 30px) / 3);
 }
 
 .articles-row li:not(:last-child) {
