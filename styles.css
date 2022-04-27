@@ -657,6 +657,10 @@ main {
     margin-bottom: 15px;
 }
 
+.quick-tips ul li h4 {
+    margin-bottom: 5px;
+}
+
 .locations-list-left,
 .reduce-cf-left {
     list-style: none;

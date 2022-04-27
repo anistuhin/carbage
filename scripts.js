@@ -43,7 +43,7 @@
         });
         $(document).on('click', '#home-next', function() {
             $('#main').attr("data-id", '1');
-            $('#home').removeClass('active');
+            // $('#home').removeClass('active');
         });
         $(document).on('click', '#choices-prev', function() {
             $('#main').attr("data-id", '0');
