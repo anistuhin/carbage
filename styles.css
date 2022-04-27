@@ -511,6 +511,7 @@ nav ul>li:not(:last-child) {
 .brand img {
     display: block;
     height: 40px;
+    cursor: pointer;
 }
 
 #center-menu {

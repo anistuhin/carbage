@@ -1,5 +1,8 @@
 (function($) {
     $(document).ready(function() {
+        $(document).on('click', '#logo', function(){
+            $('#home').click();
+        });
         $(document).on('click', '.modal-close', function(){
             $('#modal').removeClass('active');
         });
