@@ -1084,6 +1084,7 @@ main {
 .help-section>p>b {
     color: #15172c;
 }
+
 .profile-section>svg {
     fill: #d81e5b;
     width: 150px;
@@ -1092,6 +1093,7 @@ main {
     background: #15172c;
     margin-bottom: 15px;
 }
+
 #right-sidebar {
     right: 0;
     padding-right: 15px;

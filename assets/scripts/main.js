@@ -1,12 +1,12 @@
 (function($) {
     $(document).ready(function() {
-        $(document).on('click', '#logo', function(){
+        $(document).on('click', '#logo', function() {
             $('#home').click();
         });
-        $(document).on('click', '.modal-close', function(){
+        $(document).on('click', '.modal-close', function() {
             $('#modal').removeClass('active');
         });
-        $(document).on('click', '.cb-link', function(){
+        $(document).on('click', '.cb-link', function() {
             $('#modal').addClass('active');
         });
         $(document).on('click', '#add-garbage-btn', function() {
@@ -106,7 +106,7 @@
         $('.emissions-sort').val(0);
 
         // Bar Chart
-        require(["d3.v3.min.js"], function(d3) {
+        require(["assets/scripts/d3.v3.min.js"], function(d3) {
             // d3.tip
             // Copyright (c) 2013 Justin Palmer
             //
@@ -451,7 +451,7 @@
             }
         });
         // pie chart
-        require(["d3.v4.min.js"], function(d3) {
+        require(["assets/scripts/d3.v4.min.js"], function(d3) {
             var myDuration = 600;
             var firstTime = true;
             var width = 250,
