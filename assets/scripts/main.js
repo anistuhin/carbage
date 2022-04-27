@@ -417,7 +417,7 @@
                 .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
             svg.call(tip);
-            d3.csv("../data/data.csv", type, function(error, data) {
+            d3.csv("assets/data/data.csv", type, function(error, data) {
                 x.domain(data.map(function(d) { return d.letter; }));
                 y.domain([0, d3.max(data, function(d) { return d.frequency; })]);
                 svg.append("g")
@@ -469,7 +469,7 @@
                 .attr("height", height)
                 .append("g")
                 .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-            d3.tsv("../data/data.tsv", type, function(error, data) {
+            d3.tsv("assets/data/data.tsv", type, function(error, data) {
                 var regionsByFruit = d3.nest()
                     .key(function(d) { return d.fruit; })
                     .entries(data)
