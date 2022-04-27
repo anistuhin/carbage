@@ -1045,6 +1045,14 @@ main {
     margin-right: 10px;
 }
 
+.help-section > h4 {
+    margin-top: 10px;
+}
+
+.help-section > p > b {
+    color: #15172c;
+}
+
 #right-sidebar {
     right: 0;
     padding-right: 15px;
