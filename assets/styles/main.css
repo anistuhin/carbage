@@ -1177,17 +1177,17 @@ input[type="submit"]:focus {
 
 .cb-btn-chevron-white::before,
 .cb-btn-chevron-white::after {
-    background-image: url("assets/images/chevron-white.svg");
+    background-image: url("../images/chevron-white.svg");
 }
 
 .cb-btn-chevron-black::before,
 .cb-btn-chevron-black::after {
-    background-image: url("assets/images/chevron-black.svg");
+    background-image: url("../images/chevron-black.svg");
 }
 
 .cb-btn-chevron-pink::before,
 .cb-btn-chevron-pink::after {
-    background-image: url("assets/images/chevron-pink.svg");
+    background-image: url("../images/chevron-pink.svg");
 }
 
 input[type="text"],
@@ -1451,12 +1451,12 @@ textarea.cb-input {
 }
 
 .ui-widget-header .ui-icon {
-    background-image: url("assets/images/chevron-white.svg");
+    background-image: url("../images/chevron-white.svg");
 }
 
 .ui-icon,
 .ui-widget-content .ui-icon {
-    background-image: url("assets/images/chevron-white.svg");
+    background-image: url("../images/chevron-white.svg");
 }
 
 .ui-datepicker .ui-icon {
