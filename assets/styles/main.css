@@ -634,9 +634,9 @@ main {
 #left-sidebar>h3 {
     color: #d81e5b;
     margin-bottom: 20px;
-    text-align: right;
+    text-align: center;
     margin-right: 30px;
-    max-width: 250px;
+    width: 250px;
     float: right;
 }
 
@@ -656,6 +656,8 @@ main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    max-width: 250px;
+    float: right;
 }
 
 .quick-tips ul li {
