@@ -481,7 +481,7 @@ nav {
     left: 0;
     width: calc(100% - 30px);
     overflow: hidden;
-    z-index: 99999;
+    z-index: 9999;
 }
 
 nav ul>li {
@@ -792,6 +792,10 @@ main {
     display: none;
 }
 
+.emissions-view {
+    text-align: center;
+}
+
 .custom-range input {
     width: 100%;
 }
@@ -805,7 +809,7 @@ main {
 }
 
 .quick-look>div .score-area,
-.quick-look>div>.tooltippie {
+.quick-look .tooltippie {
     position: absolute;
     top: 50px;
     width: 150px;
@@ -814,8 +818,29 @@ main {
     left: 50px;
     text-align: center;
     background: white;
-    z-index: 1;
     color: green;
+}
+
+.quick-look>div .score-area {
+    z-index: 1;
+}
+
+.quick-look .tooltippie {
+    opacity: 0;
+    transition: opacity ease 0.5s;
+    z-index: 2;
+    color: #15172c;
+}
+
+.tooltippie-label {
+    font-size: 17px;
+    margin-top: 5px;
+}
+
+.tooltippie-percent {
+    margin-top: 45px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 .quick-look>div .score-count {
@@ -944,12 +969,27 @@ main {
     flex-grow: 1;
 }
 
-.garbage-row select {
-    width: 100px;
+.garbage-row [name="type"] {
+    min-width: 330px;
+    max-width: 330px;
 }
 
-#add-garbage-btn {
-    width: 110px;
+.garbage-row [name="amount"],
+.garbage-row select {
+    max-width: 100px;
+    min-width: 100px;
+}
+
+.garbage-row:not(.active) #undo-garbage-btn,
+.garbage-row.active .edit-garbage-btn,
+.garbage-row.active .delete-garbage-btn {
+    display: none !important;
+}
+
+#add-garbage-btn,
+#undo-garbage-btn {
+    min-width: 110px;
+    max-width: 110px;
 }
 
 .edit-garbage-btn {
@@ -1752,5 +1792,30 @@ polyline {
     text-align: center;
     top: 95px;
     width: 80px;
-    z-index: 10;
+    z-index: 2;
+}
+
+/* Pie Chart */
+#pie-chart {
+    position: relative;
+}
+
+.pie-list.active li:nth-child(2),
+.pie-list.active li:nth-child(4) {
+    display: none;
+}
+
+/* scattered */
+#scattered {
+    position: relative;
+}
+
+.scattip {
+    position: absolute;
+    z-index: 2;
+    display: block;
+}
+
+.myCircle:hover {
+    stroke: #d81e5b;
 }
