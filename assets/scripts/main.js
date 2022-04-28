@@ -63,9 +63,6 @@
         $(document).on('click', '.cb-link', function() {
             $('#modal').addClass('active');
         });
-        $(document).on('click', '#add-garbage-btn', function() {
-
-        });
         $(document).on('click', '.delete-garbage-btn', function() {
             var $this = $(this);
             $this.parent('.garbage-row').addClass('active');
