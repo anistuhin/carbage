@@ -116,7 +116,8 @@
             $('#main').attr("data-id", '7');
         });
         $(document).on('click', '#cf-score', function() {
-            $('#main-content .emissions-section').attr('data-id', 0);
+            //$('#main-content .emissions-section').attr('data-id', 0);
+            $('.reduce-cf-filter li:first-child button').click();
             $('#main').attr("data-id", '8');
         });
         $(document).on('click', '.locations-list-left li:not(.active), .reduce-cf-left li:not(.active)', function() {
