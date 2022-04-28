@@ -786,6 +786,10 @@ main {
     position: relative;
 }
 
+.quick-look ul {
+    list-style: square;
+}
+
 .quick-look form {
     margin-top: 20px;
     display: flex;
@@ -1041,8 +1045,9 @@ main {
 }
 
 .articles-row li {
+    position: relative;
     border: solid 1px #dbdbdb;
-    padding: 20px;
+    padding: 20px 20px 45px;
     width: calc((100% - 30px) / 3);
 }
 
@@ -1074,6 +1079,15 @@ main {
     width: 125px;
     margin-top: calc((140px - 125px) / 2);
     fill: #15172c;
+}
+
+.articles-row article {
+}
+
+.articles-row article .cb-link {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
 }
 
 .cb-link {
@@ -1365,8 +1379,12 @@ textarea.cb-input {
     padding: 15px;
     position: absolute;
     top: 0;
-    right: 5px;
+    right: 10px;
     cursor: pointer;
+}
+
+.modal-close svg {
+    fill: #d81e5b;
 }
 
 .modal-body article {
@@ -1396,6 +1414,21 @@ textarea.cb-input {
 .modal-body .article-image>svg {
     width: 50%;
     fill: #15172c;
+}
+
+.modal-body p {
+    margin-bottom: 10px;
+}
+
+.modal-body ul {
+    list-style: decimal;
+    margin-bottom: 10px;
+    padding-left: 15px;
+}
+
+.modal-body ul b {
+    display: block;
+    color: #15172c;
 }
 
 /* Dtaepicker */
