@@ -980,6 +980,17 @@ main {
     min-width: 100px;
 }
 
+.garbage-row .has-error {
+    border-color: #d81e5b !important;
+}
+
+.error-msg {
+    color: #d81e5b;
+    line-height: 50px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
 .garbage-row:not(.active) #undo-garbage-btn,
 .garbage-row.active .edit-garbage-btn,
 .garbage-row.active .delete-garbage-btn {

@@ -146,15 +146,15 @@
         <div id="main-content">
             <section class="add-garbage-section">
                 <h2>Add Garbage</h2>
-                <div class="garbage-row">
-                    <input class="cb-input" type="text" name="type" placeholder="Garbage type">
-                    <input class="cb-input" type="text" name="amount" placeholder="Quantity">
+                <div class="garbage-row" data-id="0">
+                    <input class="cb-input" type="text" name="type" placeholder="Garbage type*">
+                    <input class="cb-input" type="text" name="amount" placeholder="Qty*">
                     <select class="cb-input" name="qty">
-                        <option>Unit</option>
-                        <option>Count</option>
-                        <option>Oz</option>
-                        <option>lb</option>
-                        <option>Kg</option>
+                        <option value="0">Unit*</option>
+                        <option value="1">Count</option>
+                        <option value="2">Oz</option>
+                        <option value="3">lb</option>
+                        <option value="4">Kg</option>
                     </select>
                     <button class="cb-button" id="add-garbage-btn">Add</button>
                 </div>
