@@ -810,7 +810,7 @@ main {
 
 .quick-look>div::after {
     content: "CF Score";
-    color: #15172c;
+    color: green; /*#15172c;*/
     font-size: 20px;
     z-index: 2;
     line-height: 200px;
