@@ -804,8 +804,7 @@ main {
     position: relative;
 }
 
-.quick-look>div::before,
-.quick-look>div::after,
+.quick-look>div .score-area,
 .quick-look>div>.tooltippie {
     position: absolute;
     top: 50px;
@@ -814,25 +813,26 @@ main {
     border-radius: 50%;
     left: 50px;
     text-align: center;
-}
-
-.quick-look>div::before {
     background: white;
-    content: "45";
-    color: green;
-    font-size: 45px;
-    line-height: 125px;
-    font-weight: bold;
     z-index: 1;
+    color: green;
 }
 
-.quick-look>div::after {
-    content: "CF Score";
-    color: green;
-    /*#15172c;*/
+.quick-look>div .score-count {
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 35px;
+}
+
+.quick-look>div .score-title {
     font-size: 20px;
-    z-index: 2;
-    line-height: 200px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.quick-look>div .score-state svg {
+    fill: green;
+    width: 20px;
 }
 
 .quick-look ul {
