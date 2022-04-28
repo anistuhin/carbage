@@ -631,6 +631,22 @@ main {
     padding-left: 15px;
 }
 
+#left-sidebar>h3 {
+    color: #d81e5b;
+    margin-bottom: 20px;
+    text-align: right;
+    margin-right: 30px;
+    max-width: 250px;
+    float: right;
+}
+
+#left-sidebar>h3>svg {
+    height: 20px;
+    margin-left: 10px;
+    fill: #d81e5b;
+    margin-bottom: -4px
+}
+
 #left-sidebar section {
     margin-right: 30px;
 }
@@ -810,7 +826,8 @@ main {
 
 .quick-look>div::after {
     content: "CF Score";
-    color: green; /*#15172c;*/
+    color: green;
+    /*#15172c;*/
     font-size: 20px;
     z-index: 2;
     line-height: 200px;
