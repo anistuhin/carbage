@@ -786,6 +786,23 @@ main {
     position: relative;
 }
 
+.quick-look>div::before {
+    content: "45%";
+    color: green;
+    font-size: 45px;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    background: white;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 50px;
+    text-align: center;
+    line-height: 150px;
+    z-index: 1;
+}
+
 .quick-look ul {
     list-style: square;
 }
@@ -1081,8 +1098,7 @@ main {
     fill: #15172c;
 }
 
-.articles-row article {
-}
+.articles-row article {}
 
 .articles-row article .cb-link {
     position: absolute;
@@ -1692,17 +1708,17 @@ polyline {
     fill: none;
 }
 
-.tooltip {                                                        
-        background: #eee;                                              
-        box-shadow: 0 0 5px #999999;                                    
-        color: #333;                                                   
-        display: none;                                                 
-        font-size: 12px;                                              
-        left: 130px;                                                   
-        padding: 10px;                                                 
-        position: absolute;                                             
-        text-align: center;                                            
-        top: 95px;                                                    
-        width: 80px;                                                  
-        z-index: 10;                                                   
-      }           
+.tooltip {
+    background: #eee;
+    box-shadow: 0 0 5px #999999;
+    color: #333;
+    display: none;
+    font-size: 12px;
+    left: 130px;
+    padding: 10px;
+    position: absolute;
+    text-align: center;
+    top: 95px;
+    width: 80px;
+    z-index: 10;
+}
