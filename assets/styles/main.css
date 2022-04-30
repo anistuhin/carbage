@@ -925,6 +925,7 @@ main {
 
 #main .add-garbage-section,
 #main .choices-section,
+.choices-section-right-first,
 .choices-section-right,
 #main .locations-list-section,
 #main .reduce-cf-section,
@@ -942,6 +943,7 @@ main {
 
 #main[data-id="0"] .add-garbage-section,
 #main[data-id="1"] .choices-section,
+#main[data-id="1"] .choices-section-right-first,
 #main[data-id="2"] .locations-list-section,
 #main[data-id="2"] .choices-section-right,
 #main[data-id="3"] .choices-section-right,
@@ -995,6 +997,25 @@ main {
 .garbage-row.active .edit-garbage-btn,
 .garbage-row.active .delete-garbage-btn {
     display: none !important;
+}
+
+.garbage-row.active {
+    position: relative;
+}
+
+.garbage-row.active::before {
+    content: "Deleting...";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 50px;
+    text-align: center;
+    color: #d81e5b;
+    font-weight: bold;
+    width: 550px;
+    background: rgba(255, 255, 255, 0.8);
+    line-height: 50px;
+
 }
 
 #add-garbage-btn,
